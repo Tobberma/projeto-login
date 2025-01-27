@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 890px) and (max-width: 1340px) {
+  body {
+    background: linear-gradient(to top, #49a09d, #5f2c82); /* Mantém o gradiente */
+  }
+
+  section#login {
+    display: flex; /* Alinha os elementos lado a lado */
+    width: 90%; /* Ocupa 90% da largura da tela para evitar bordas exageradas */
+    max-width: 1000px; /* Define um limite para telas intermediárias */
+    margin: 0 auto; /* Centraliza o container */
+    height: 550px; /* Ajuste a altura conforme necessário */
+  }
+
+  section#login > div#imagem {
+    flex: 4; /* Aumenta para 40% do espaço */
+    height: 100%; /* Garante que a imagem ocupe toda a altura */
+    background-size: cover; /* Faz a imagem preencher o espaço sem distorções */
+    background-position: top right; /* Centraliza a imagem */
+  }
+
+  section#login > div#formulario {
+    flex: 6; /* O formulário ocupa 60% do espaço */
+    padding: 30px; /* Adiciona espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+  }
+}
+
+@media screen and (min-width: 1341px) {
+  body {
+    background: linear-gradient(to top, #49a09d, #5f2c82); /* Mantém o gradiente */
+  }
+
+  section#login {
+    display: flex; /* Alinha os elementos lado a lado */
+    width: 100%; /* Ocupa toda a largura */
+    max-width: 1200px; /* Centraliza o conteúdo em telas muito largas */
+    margin: 0 auto; /* Centraliza a seção no meio da página */
+    height: 600px; /* Ajuste a altura conforme necessário */
+  }
+
+  section#login > div#imagem {
+    flex: 1; /* Define 50% da largura */
+    height: 100%; /* Garante que ocupe toda a altura */
+    background-size: cover; /* Faz a imagem preencher o espaço sem distorções */
+    background-position: center; /* Centraliza a imagem */
+  }
+
+  section#login > div#formulario {
+    flex: 1; /* Define 50% da largura */
+    padding: 40px; /* Adiciona espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+  }
+}
